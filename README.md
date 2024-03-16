@@ -10,3 +10,17 @@ Install-windowsFeature -Name AD-Domain-Services -IncludeManagementTools
 ```
 
 
+# 02 Joined the Domain Controller 
+1. change the dnsseveraddress to our DC1:XCorp.com
+    ```powershell
+    Get-NetIPAddress -InterfaceIndex <no>
+    Get-DNSClientSererAddress -InterfaceIndex <no>
+    Set-DNSClientSererAddress -InterfaceIndex <no> -ServerAddress <ip of DC1>
+    ```
+2. Joind the DC1
+    ```powershell
+    Add-Computer -DomainName XCorp.com -Crendtial (Get-Credential) -Force -Restart
+    ```
+    
+
+    
