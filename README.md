@@ -1,6 +1,9 @@
 # 01 Installing the Domain Controller
 1. Use `sconfig` to:
     - change the hostname
+    ```powershell
+    Rename-Computer -NewName <computername>
+    ```
     - change the IP address to static
     - change the DNS server to VMware IP
 

@@ -1,0 +1,26 @@
+{
+    "groups": [
+        {
+            "group1": "Infra",
+            "group2": "dev"
+
+        }
+    ],
+
+    "users": [
+        {
+            "name":"david benjamin",           
+            "password":"david.benjamin",
+            "groups": [
+                "infra"
+            ] 
+        },
+        {
+            "name": "mark wayne",
+            "password":"mark.wayne",
+            "groups":[
+                "dev"
+            ]
+        }
+    ]
+}                               
