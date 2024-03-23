@@ -1,8 +1,9 @@
 {
+    "domain": "evil.com.local",
+
     "groups": [
         {
-            "group1": "Infra",
-            "group2": "dev"
+            "name": "Infra"
 
         }
     ],
@@ -10,16 +11,16 @@
     "users": [
         {
             "name":"david benjamin",           
-            "password":"david.benjamin",
+            "password":"P@ssw0rd789",
             "groups": [
                 "infra"
             ] 
         },
         {
             "name": "mark wayne",
-            "password":"mark.wayne",
+            "password":"P@ssw0rd123",
             "groups":[
-                "dev"
+                "infra"
             ]
         }
     ]

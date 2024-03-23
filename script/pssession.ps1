@@ -1,7 +1,7 @@
 $passFile = ".\pass.txt"
 $securePassword = Get-Content $passFile | ConvertTo-SecureString -AsPlainText -Force
-$username = "XCorp.com\Administrator"
-$IP = "192.168.25.129"
+$username = "EVIL\Administrator"
+$IP = "192.168.25.22"
 $cred = New-Object System.Management.Automation.PSCredential -ArgumentList $username, $securePassword
 # $oldSession = Get-PSSession
 # if ($oldSession -eq "Broken") {
